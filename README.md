@@ -1,2 +1,2 @@
-# finalproject_pronetif20c_alif
+# Aplikasi Kasir Vapestore
 Tugas Akhir Matkul Pemrograman Framwork (.NET)
