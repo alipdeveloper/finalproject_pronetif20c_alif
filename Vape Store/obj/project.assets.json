@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\tugas\\S5\\PromNet\\Vape Store\\Vape Store.csproj",
+      "projectUniqueName": "E:\\tugas\\S5\\PromNet\\Final projek\\finalproject_pronetif20c_alif\\Vape Store\\Vape Store.csproj",
       "projectName": "Vape Store",
-      "projectPath": "E:\\tugas\\S5\\PromNet\\Vape Store\\Vape Store.csproj",
+      "projectPath": "E:\\tugas\\S5\\PromNet\\Final projek\\finalproject_pronetif20c_alif\\Vape Store\\Vape Store.csproj",
       "packagesPath": "C:\\Users\\ahmad\\.nuget\\packages\\",
-      "outputPath": "E:\\tugas\\S5\\PromNet\\Vape Store\\obj\\",
+      "outputPath": "E:\\tugas\\S5\\PromNet\\Final projek\\finalproject_pronetif20c_alif\\Vape Store\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
