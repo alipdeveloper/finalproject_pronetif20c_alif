@@ -16,5 +16,8 @@
     <Compile Update="FrmJual.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
