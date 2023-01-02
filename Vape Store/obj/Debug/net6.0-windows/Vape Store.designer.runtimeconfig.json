@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\khnfp\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\khnfp\\.nuget\\packages"
+      "C:\\Users\\MULTITASKING\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MULTITASKING\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
