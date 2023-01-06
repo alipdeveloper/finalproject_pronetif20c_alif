@@ -65,36 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmKasTambah.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmKasTambah.Designer.cs">
-      <DependentUpon>FrmKasTambah.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCariBarang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCariBarang.Designer.cs">
-      <DependentUpon>FrmCariBarang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCetak.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCetak.Designer.cs">
-      <DependentUpon>FrmCetak.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmJual.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmJual.Designer.cs">
-      <DependentUpon>FrmJual.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmKas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmKas.Designer.cs">
-      <DependentUpon>FrmKas.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,12 +83,6 @@
     <Compile Include="FrmTerms.Designer.cs">
       <DependentUpon>FrmTerms.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLaporan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLaporan.Designer.cs">
-      <DependentUpon>FrmLaporan.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBarangTambah.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,12 +100,6 @@
     </Compile>
     <Compile Include="FrmPengaturan.Designer.cs">
       <DependentUpon>FrmPengaturan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmKategoriKas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmKategoriKas.Designer.cs">
-      <DependentUpon>FrmKategoriKas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUtama.cs">
       <SubType>Form</SubType>
@@ -170,41 +128,8 @@
     <Compile Include="H.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RptJual.cs">
-      <DependentUpon>RptJual.rpt</DependentUpon>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Include="rptKas.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptKas.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="rptNota.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptNota.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <EmbeddedResource Include="FrmBarang.resx">
       <DependentUpon>FrmBarang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmKasTambah.resx">
-      <DependentUpon>FrmKasTambah.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCariBarang.resx">
-      <DependentUpon>FrmCariBarang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCetak.resx">
-      <DependentUpon>FrmCetak.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmJual.resx">
-      <DependentUpon>FrmJual.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmKas.resx">
-      <DependentUpon>FrmKas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSupplier.resx">
       <DependentUpon>FrmSupplier.cs</DependentUpon>
@@ -214,9 +139,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTerms.resx">
       <DependentUpon>FrmTerms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLaporan.resx">
-      <DependentUpon>FrmLaporan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBarangTambah.resx">
       <DependentUpon>FrmBarangTambah.cs</DependentUpon>
@@ -233,9 +155,6 @@
     <EmbeddedResource Include="FrmTambahUser.resx">
       <DependentUpon>FrmTambahUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmKategoriKas.resx">
-      <DependentUpon>FrmKategoriKas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmUtama.resx">
       <DependentUpon>FrmUtama.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,18 +168,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RptJual.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RptJual.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rptKas.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptKas.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rptNota.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptNota.cs</LastGenOutput>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
