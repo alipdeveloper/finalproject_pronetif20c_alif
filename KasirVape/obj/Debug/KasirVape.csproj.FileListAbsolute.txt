@@ -1,0 +1,76 @@
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\bin\Debug\KasirVape.exe.config
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\bin\Debug\KasirVape.exe
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\bin\Debug\KasirVape.pdb
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\bin\Debug\System.Configuration.dll
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmBarang.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmKasTambah.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmCariBarang.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmCetak.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmJual.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmKas.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmTerms.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmLaporan.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmBarangTambah.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmLogin.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmPassword.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmPengaturan.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmTambahUser.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmKategoriKas.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.FrmUtama.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.Properties.Resources.resources
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.csproj.GenerateResource.Cache
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.exe
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.pdb
+C:\Users\62812\Documents\Final Project Pronet\software_kasir_csharp-master\JualTunai\obj\Debug\KasirVape.csprojResolveAssemblyReference.cache
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\bin\Debug\KasirVape.exe.config
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.exe
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.pdb
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\bin\Debug\KasirVape.exe
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\bin\Debug\KasirVape.pdb
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\bin\Debug\System.Configuration.dll
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.csprojResolveAssemblyReference.cache
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmBarang.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmKasTambah.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmCariBarang.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmCetak.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmJual.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmKas.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmTerms.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmLaporan.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmBarangTambah.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmLogin.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmPassword.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmPengaturan.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmTambahUser.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmKategoriKas.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmUtama.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.Properties.Resources.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.csproj.GenerateResource.Cache
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmSupplierTambah.resources
+C:\Users\62812\Documents\Final Project Pronet\KasirVape\JualTunai\obj\Debug\KasirVape.FrmSupplier.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.csproj.AssemblyReference.cache
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmBarang.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmKasTambah.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmCariBarang.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmCetak.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmJual.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmKas.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmSupplier.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmSupplierTambah.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmTerms.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmLaporan.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmBarangTambah.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmLogin.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmPassword.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmPengaturan.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmTambahUser.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmKategoriKas.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.FrmUtama.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.Properties.Resources.resources
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.csproj.GenerateResource.cache
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.csproj.CoreCompileInputs.cache
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.exe
+E:\tugas\S5\PromNet\Final projek\KasirVape\JualTunai\obj\Debug\KasirVape.pdb
+E:\tugas\S5\PromNet\Final projek\finalproject_pronetif20c_alif\KasirVape\obj\Debug\KasirVape.csproj.AssemblyReference.cache
+E:\tugas\S5\PromNet\Final projek\finalproject_pronetif20c_alif\KasirVape\obj\Debug\KasirVape.exe
+E:\tugas\S5\PromNet\Final projek\finalproject_pronetif20c_alif\KasirVape\obj\Debug\KasirVape.pdb
