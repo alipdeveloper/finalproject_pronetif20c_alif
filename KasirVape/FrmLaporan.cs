@@ -29,7 +29,7 @@ namespace KasirVape
 
             txtOperator.Items.Clear();
             txtOperator.Items.Add("SEMUA");
-            dr = H.OpenDr("SELECT user FROM tb_user");
+            dr = H.OpenDr("SELECT username FROM tb_user");
             H.FillCmb(dr, txtOperator);
             isiGrid();
         }
@@ -40,10 +40,10 @@ namespace KasirVape
 
             string awal = txtAwal.Value.ToString("yyyy-MM-dd");
             string akhir = txtAkhir.Value.ToString("yyyy-MM-dd");
-            string sql = "SELECT * FROM tb_jual WHERE tanggal>='" + awal + "' AND tanggal <='" + akhir + "'";
+            string sql = "SELECT * FROM nota WHERE tanggal>='" + awal + "' AND tanggal <='" + akhir + "'";
             if (txtOperator.Text != "SEMUA")
             {
-                sql += " AND operator='" + txtOperator.Text + "'";
+                sql += " AND username='" + txtOperator.Text + "'";
             }
             sql += " ORDER BY Faktur";
             
@@ -58,7 +58,7 @@ namespace KasirVape
                     H.toStrDate(dr["tanggal"]),
                     H.toStrC(dr["grandtotal"]),
                    //.toStrC(dr["laba"]),
-                    dr["operator"]
+                    dr["username"]
                 });
                 grandtotal += H.toD(dr["grandtotal"]);
                 //ba += H.toD(dr["laba"]);
@@ -95,14 +95,16 @@ namespace KasirVape
             {
                 string periode = "Periode: " + txtAwal.Value.ToString("dd-MMM-yyyy") + " s/d " + txtAkhir.Value.ToString("dd-MMM-yyyy");
                 string cetak = "Cetak: " + DateTime.Now.ToShortDateString() + " Oleh: " + H.strOperator;
+                string stroperator = txtOperator.Text;
 
                 H.CloseDr();
                 DataSet ds = new DataSet();
 
                 sql = "SELECT '" +
-                    periode + "' AS periode, faktur, tanggal, grandtotal, '" +
+                    stroperator + "' AS username, '" +
+                    periode + "' AS periode, faktur, tanggal, grandtotal, username, '" +
                     cetak + "' AS cetak " +
-                    "FROM tb_jual WHERE tanggal>='" + txtAwal.Value.ToString("yyyy-MM-dd") + "' AND tanggal<='" + txtAkhir.Value.ToString("yyyy-MM-dd") + "'";
+                    "FROM nota WHERE tanggal>='" + txtAwal.Value.ToString("yyyy-MM-dd") + "' AND tanggal<='" + txtAkhir.Value.ToString("yyyy-MM-dd") + "'";
 
                 MySqlDataAdapter adapter = new MySqlDataAdapter(sql, H.getConnection());
                 adapter.Fill(ds);

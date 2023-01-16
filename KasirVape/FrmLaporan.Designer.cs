@@ -31,12 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCetak = new System.Windows.Forms.Button();
             this.btnKeluar = new System.Windows.Forms.Button();
             this.txtAwal = new System.Windows.Forms.DateTimePicker();
@@ -48,6 +42,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtGrandtotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,8 +70,7 @@
             this.Column2,
             this.Column3,
             this.Column5,
-            this.Column6,
-            this.Column7});
+            this.Column4});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,48 +79,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv.Location = new System.Drawing.Point(16, 81);
-            this.dgv.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv.Location = new System.Drawing.Point(12, 66);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(916, 287);
+            this.dgv.Size = new System.Drawing.Size(687, 233);
             this.dgv.TabIndex = 1;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "NO";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 56;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Faktur";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 75;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Tanggal";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 85;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Grandtotal";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 102;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Laba";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 65;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Operator";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 92;
             // 
             // btnCetak
             // 
@@ -130,10 +91,9 @@
             this.btnCetak.AutoSize = true;
             this.btnCetak.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnCetak.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCetak.Location = new System.Drawing.Point(16, 372);
-            this.btnCetak.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCetak.Location = new System.Drawing.Point(12, 300);
             this.btnCetak.Name = "btnCetak";
-            this.btnCetak.Size = new System.Drawing.Size(88, 28);
+            this.btnCetak.Size = new System.Drawing.Size(73, 25);
             this.btnCetak.TabIndex = 2;
             this.btnCetak.Text = "Cetak (F6)";
             this.btnCetak.UseVisualStyleBackColor = true;
@@ -145,10 +105,9 @@
             this.btnKeluar.AutoSize = true;
             this.btnKeluar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnKeluar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKeluar.Location = new System.Drawing.Point(124, 372);
-            this.btnKeluar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKeluar.Location = new System.Drawing.Point(93, 300);
             this.btnKeluar.Name = "btnKeluar";
-            this.btnKeluar.Size = new System.Drawing.Size(105, 28);
+            this.btnKeluar.Size = new System.Drawing.Size(88, 25);
             this.btnKeluar.TabIndex = 3;
             this.btnKeluar.Text = "Keluar (ESC)";
             this.btnKeluar.UseVisualStyleBackColor = true;
@@ -159,10 +118,9 @@
             this.txtAwal.CustomFormat = "dd-MMM-yyyy";
             this.txtAwal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAwal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtAwal.Location = new System.Drawing.Point(288, 12);
-            this.txtAwal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAwal.Location = new System.Drawing.Point(216, 10);
             this.txtAwal.Name = "txtAwal";
-            this.txtAwal.Size = new System.Drawing.Size(157, 24);
+            this.txtAwal.Size = new System.Drawing.Size(119, 21);
             this.txtAwal.TabIndex = 4;
             this.txtAwal.ValueChanged += new System.EventHandler(this.txtAwal_ValueChanged);
             // 
@@ -171,10 +129,9 @@
             this.txtAkhir.CustomFormat = "dd-MMM-yyyy";
             this.txtAkhir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAkhir.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtAkhir.Location = new System.Drawing.Point(288, 48);
-            this.txtAkhir.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAkhir.Location = new System.Drawing.Point(216, 39);
             this.txtAkhir.Name = "txtAkhir";
-            this.txtAkhir.Size = new System.Drawing.Size(157, 24);
+            this.txtAkhir.Size = new System.Drawing.Size(119, 21);
             this.txtAkhir.TabIndex = 5;
             this.txtAkhir.ValueChanged += new System.EventHandler(this.txtAkhir_ValueChanged);
             // 
@@ -183,10 +140,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(149, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(112, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 18);
+            this.label1.Size = new System.Drawing.Size(79, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Mulai Tangal";
             // 
@@ -195,10 +151,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(149, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(112, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 18);
+            this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "S/D Tanggal";
             // 
@@ -206,10 +161,9 @@
             // 
             this.txtOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOperator.FormattingEnabled = true;
-            this.txtOperator.Location = new System.Drawing.Point(537, 11);
-            this.txtOperator.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOperator.Location = new System.Drawing.Point(403, 9);
             this.txtOperator.Name = "txtOperator";
-            this.txtOperator.Size = new System.Drawing.Size(136, 26);
+            this.txtOperator.Size = new System.Drawing.Size(103, 23);
             this.txtOperator.TabIndex = 8;
             this.txtOperator.SelectedIndexChanged += new System.EventHandler(this.txtOperator_SelectedIndexChanged);
             // 
@@ -218,10 +172,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(456, 15);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(342, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 18);
+            this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Operator";
             // 
@@ -230,10 +183,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(695, 15);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(521, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 18);
+            this.label4.Size = new System.Drawing.Size(64, 15);
             this.label4.TabIndex = 10;
             this.label4.Text = "Grandtotal";
             // 
@@ -242,29 +194,57 @@
             this.txtGrandtotal.BackColor = System.Drawing.SystemColors.Window;
             this.txtGrandtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGrandtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrandtotal.Location = new System.Drawing.Point(788, 12);
-            this.txtGrandtotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGrandtotal.Location = new System.Drawing.Point(591, 10);
             this.txtGrandtotal.Name = "txtGrandtotal";
-            this.txtGrandtotal.Size = new System.Drawing.Size(133, 24);
+            this.txtGrandtotal.Size = new System.Drawing.Size(100, 21);
             this.txtGrandtotal.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(11, 11);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(8, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 63);
+            this.label6.Size = new System.Drawing.Size(104, 51);
             this.label6.TabIndex = 14;
             this.label6.Text = "Laporan Penjualan";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "NO";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Faktur";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 66;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Tanggal";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 77;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Grandtotal";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 89;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Operator";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 80;
+            // 
             // FrmLaporan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(948, 411);
+            this.ClientSize = new System.Drawing.Size(711, 334);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtGrandtotal);
             this.Controls.Add(this.label4);
@@ -278,7 +258,6 @@
             this.Controls.Add(this.btnCetak);
             this.Controls.Add(this.dgv);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLaporan";
             this.Text = "Form Laporan";
             this.Load += new System.EventHandler(this.FrmLaporan_Load);
@@ -307,7 +286,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

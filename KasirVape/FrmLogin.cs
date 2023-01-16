@@ -20,10 +20,10 @@ namespace KasirVape
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            dr = H.openTable("tb_user", "user='" + txtNama.Text + "' AND pass='" + txtPass.Text + "' AND status=1");
+            dr = H.openTable("tb_user", "username='" + txtNama.Text + "' AND pass='" + txtPass.Text + "' AND status=1");
             if (dr.Read())
             {
-                H.strOperator = dr["user"].ToString();
+                H.strOperator = dr["username"].ToString();
                 this.Hide();
                 FrmUtama frm = new FrmUtama();
                 frm.ShowDialog();
@@ -37,12 +37,6 @@ namespace KasirVape
 
         private void FrmLgn_Load(object sender, EventArgs e)
         {
-            dr = H.OpenDr("SELECT * FROM tb_user");
-            while (dr.Read())
-            {
-                txtNama.Items.Add(dr["user"].ToString());
-            }
-            if (txtNama.Items.Count > 0) txtNama.SelectedIndex = 0;
            
         }
 
@@ -64,7 +58,7 @@ namespace KasirVape
 
         private void txtNama_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)13) txtPass.Focus();            
+           // if (e.KeyChar == (char)13) txtPass.Focus();            
         }        
     }
 }

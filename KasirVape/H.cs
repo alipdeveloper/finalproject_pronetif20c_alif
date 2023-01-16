@@ -22,7 +22,7 @@ namespace KasirVape
         {
             if (conn != null) return;
 
-            string strConn = "server=localhost; user=root; database=db_vapestore; password=";
+            string strConn = "server=localhost; user=root; database=db_vapestore1; password=";
 
             try
             {
@@ -158,6 +158,22 @@ namespace KasirVape
             }
             return false;
         }
+        public static bool excecuteProce(MySqlCommand cmd)
+        {
+            Connect();
+            CloseDr();
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                msgError(ex.Message + "\n" + cmd.CommandText);
+            }
+            return false;
+        }
+       
 
         public static object getNextInc(string tb)
         {
@@ -395,7 +411,7 @@ namespace KasirVape
 
         public static bool isUserCan(string str)
         {
-            dr = OpenDr("SELECT * FROm tb_user WHERE user='" + strOperator + "' AND " +  str + "=1");
+            dr = OpenDr("SELECT * From tb_user WHERE username='" + strOperator + "' AND " +  str + "=1");
             if (dr.Read())
             {
                 return true;

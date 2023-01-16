@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace KasirVape
 {
@@ -18,7 +20,7 @@ namespace KasirVape
 
         private void mnBarang_Click(object sender, EventArgs e)
         {
-            H.openForm(new FrmBarang(), this);    
+            H.openForm(new FrmBarang(), this);
         }
 
         private void FrmUtm_Load(object sender, EventArgs e)
@@ -27,6 +29,7 @@ namespace KasirVape
             sb2.Text = "Operator: " + H.strOperator;
 
             mnBarang.Enabled = tbBarang.Enabled = H.isUserCan("frmbrg");
+            mnSupplier.Enabled = tbSupplier.Enabled = H.isUserCan("frmsupp");
             mnKategori.Enabled = tbKategori.Enabled = H.isUserCan("frmkat");
             mnSatuan.Enabled = tbSatuan.Enabled = H.isUserCan("frmsat");
 
@@ -42,7 +45,7 @@ namespace KasirVape
         {
             sb1.Text = "Tanggal: " + DateTime.Now.ToString("dd MMMM yyyy HH:mm:ss");
         }
-        
+
         private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -51,6 +54,11 @@ namespace KasirVape
         private void tbBarang_Click(object sender, EventArgs e)
         {
             mnBarang_Click(sender, e);
+        }
+
+        private void tbSupplier_Click(object sender, EventArgs e)
+        {
+            mnSupplier_Click(sender, e);
         }
 
         private void tbKategori_Click(object sender, EventArgs e)
@@ -117,6 +125,11 @@ namespace KasirVape
             mnSetting_Click(sender, e);
         }
 
+        private void tbKalkulator_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("calc.exe");
+        }
+
         private void tbKas_Click(object sender, EventArgs e)
         {
             mnKas_Click(null, null);
@@ -127,39 +140,14 @@ namespace KasirVape
             H.openForm(new FrmKas(), this);
         }
 
-        private void tbBarang_Click_1(object sender, EventArgs e)
+        private void mnSupplier_Click(object sender, EventArgs e)
         {
-            mnBarang_Click(sender, e);
+            H.openForm(new FrmSupplier(), this);
         }
 
-        private void tbKategori_Click_1(object sender, EventArgs e)
+        private void tbSupplier_Click_1(object sender, EventArgs e)
         {
-            mnKategori_Click(sender, e);
-        }
-
-        private void tbSatuan_Click_1(object sender, EventArgs e)
-        {
-            mnSatuan_Click(sender, e);
-        }
-
-        private void tbJual_Click_1(object sender, EventArgs e)
-        {
-            mnJual_Click(sender, e);
-        }
-
-        private void tbLap_Click_1(object sender, EventArgs e)
-        {
-            mnLap_Click(sender, e);
-        }
-
-        private void tbKas_Click_1(object sender, EventArgs e)
-        {
-            mnKas_Click(sender, e);
-        }
-
-        private void tbPassword_Click_1(object sender, EventArgs e)
-        {
-            mnPassword_Click(sender, e);
+            mnSupplier_Click(sender, e);
         }
     }
 }
