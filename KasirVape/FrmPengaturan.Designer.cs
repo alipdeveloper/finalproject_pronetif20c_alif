@@ -90,12 +90,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv.Location = new System.Drawing.Point(16, 15);
-            this.dgv.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv.Location = new System.Drawing.Point(18, 19);
+            this.dgv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(1062, 110);
+            this.dgv.RowHeadersWidth = 62;
+            this.dgv.Size = new System.Drawing.Size(1195, 138);
             this.dgv.TabIndex = 1;
             // 
             // btnTambah
@@ -104,10 +105,10 @@
             this.btnTambah.AutoSize = true;
             this.btnTambah.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Location = new System.Drawing.Point(12, 133);
-            this.btnTambah.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTambah.Location = new System.Drawing.Point(14, 169);
+            this.btnTambah.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(103, 28);
+            this.btnTambah.Size = new System.Drawing.Size(124, 32);
             this.btnTambah.TabIndex = 2;
             this.btnTambah.Text = "Tambah (F2)";
             this.btnTambah.UseVisualStyleBackColor = true;
@@ -119,10 +120,10 @@
             this.btnUbah.AutoSize = true;
             this.btnUbah.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnUbah.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUbah.Location = new System.Drawing.Point(137, 133);
-            this.btnUbah.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUbah.Location = new System.Drawing.Point(154, 169);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUbah.Name = "btnUbah";
-            this.btnUbah.Size = new System.Drawing.Size(84, 28);
+            this.btnUbah.Size = new System.Drawing.Size(101, 32);
             this.btnUbah.TabIndex = 3;
             this.btnUbah.Text = "Ubah (F7)";
             this.btnUbah.UseVisualStyleBackColor = true;
@@ -134,10 +135,10 @@
             this.btnHapus.AutoSize = true;
             this.btnHapus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnHapus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHapus.Location = new System.Drawing.Point(241, 133);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHapus.Location = new System.Drawing.Point(271, 169);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(92, 28);
+            this.btnHapus.Size = new System.Drawing.Size(110, 32);
             this.btnHapus.TabIndex = 4;
             this.btnHapus.Text = "Hapus (F8)";
             this.btnHapus.UseVisualStyleBackColor = true;
@@ -149,10 +150,10 @@
             this.btnKeluar.AutoSize = true;
             this.btnKeluar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnKeluar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKeluar.Location = new System.Drawing.Point(353, 133);
-            this.btnKeluar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKeluar.Location = new System.Drawing.Point(397, 169);
+            this.btnKeluar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnKeluar.Name = "btnKeluar";
-            this.btnKeluar.Size = new System.Drawing.Size(105, 28);
+            this.btnKeluar.Size = new System.Drawing.Size(126, 32);
             this.btnKeluar.TabIndex = 5;
             this.btnKeluar.Text = "Keluar (ESC)";
             this.btnKeluar.UseVisualStyleBackColor = true;
@@ -160,108 +161,121 @@
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "ID";
+            this.Column1.HeaderText = "Username";
+            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 47;
+            this.Column1.Width = 128;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "User";
+            this.Column2.HeaderText = "Password";
+            this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 65;
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Pass";
+            this.Column3.HeaderText = "Nama";
+            this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 67;
+            this.Column3.Width = 93;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Aktif";
+            this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 61;
+            this.Column4.Width = 81;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "FrmBrg";
+            this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 83;
+            this.Column5.Width = 105;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "FrmSupp";
+            this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            this.Column6.Width = 94;
+            this.Column6.Width = 119;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "FrmKat";
+            this.Column7.MinimumWidth = 8;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
-            this.Column7.Width = 82;
+            this.Column7.Width = 104;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "FrmSat";
+            this.Column8.MinimumWidth = 8;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Width = 82;
+            this.Column8.Width = 104;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "FrmJual";
+            this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Width = 87;
+            this.Column9.Width = 110;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "FrmLap";
+            this.Column10.MinimumWidth = 8;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
-            this.Column10.Width = 84;
+            this.Column10.Width = 107;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "FrmKas";
+            this.Column11.MinimumWidth = 8;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
-            this.Column11.Width = 86;
+            this.Column11.Width = 108;
             // 
             // Column12
             // 
             this.Column12.HeaderText = "FrmPass";
+            this.Column12.MinimumWidth = 8;
             this.Column12.Name = "Column12";
             this.Column12.ReadOnly = true;
-            this.Column12.Width = 94;
+            this.Column12.Width = 117;
             // 
             // Column13
             // 
             this.Column13.HeaderText = "FrmSet";
+            this.Column13.MinimumWidth = 8;
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
-            this.Column13.Width = 82;
+            this.Column13.Width = 104;
             // 
             // FrmPengaturan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(1094, 174);
+            this.ClientSize = new System.Drawing.Size(1231, 218);
             this.Controls.Add(this.btnKeluar);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnUbah);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.dgv);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmPengaturan";
             this.Text = "Pengaturan";
             this.Load += new System.EventHandler(this.FrmSet_Load);
