@@ -22,9 +22,7 @@ namespace KasirVape
 
         private void frmKat_Load(object sender, EventArgs e)
         {
-            this.Text = term_taxonomy.ToUpper();
-            dgv.Columns[0].HeaderText = term_taxonomy.ToUpper();
-            isiGrid();
+           
         }
 
         void isiGrid()
@@ -47,7 +45,7 @@ namespace KasirVape
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAdd_Click_1(object sender, EventArgs e)
         {
             if (txtNama.Text == "")
             {
@@ -68,6 +66,20 @@ namespace KasirVape
             isiGrid();
         }
 
+
+        private void FrmTerms_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (H.isClose(e)) this.Close();
+        }
+
+        private void FrmTerms_Load(object sender, EventArgs e)
+        {
+            this.Text = term_taxonomy.ToUpper();
+            dgv.Columns[0].HeaderText = term_taxonomy.ToUpper();
+            isiGrid();
+        }
+
+
         private void btnDel_Click(object sender, EventArgs e)
         {
             if (H.msgAsk("Hapus data?") == DialogResult.Yes)
@@ -78,9 +90,14 @@ namespace KasirVape
             }
         }
 
-        private void FrmTerms_KeyDown(object sender, KeyEventArgs e)
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (H.isClose(e)) this.Close();
+
+        }
+
+        private void txtNama_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

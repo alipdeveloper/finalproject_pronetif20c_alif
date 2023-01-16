@@ -43,16 +43,12 @@ namespace KasirVape
             isiGrid();
         }
 
-        private void btnTambah_Click(object sender, EventArgs e)
+        private void btnTambah_Click_1(object sender, EventArgs e)
         {
-            FrmSupplierTambah frm = new FrmSupplierTambah();
-            if (frm.ShowDialog() == DialogResult.Yes)
-            {
-                isiGrid();
-            }
+        
         }
 
-        private void btnUbah_Click(object sender, EventArgs e)
+        private void btnUbah_Click_1(object sender, EventArgs e)
         {
             if (dgv.Rows.Count == 0)
             {
@@ -86,14 +82,23 @@ namespace KasirVape
             }
         }
 
-        private void btnKeluar_Click(object sender, EventArgs e)
+        private void btnKeluar_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnTambah_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtAdd_Click(object sender, EventArgs e)
+        {
+            FrmSupplierTambah frm = new FrmSupplierTambah();
+            if (frm.ShowDialog() == DialogResult.Yes)
+            {
+                isiGrid();
+            }
         }
     }
 

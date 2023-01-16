@@ -62,68 +62,78 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv.Location = new System.Drawing.Point(25, 31);
-            this.dgv.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv.Location = new System.Drawing.Point(28, 39);
+            this.dgv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(307, 255);
+            this.dgv.RowHeadersWidth = 62;
+            this.dgv.Size = new System.Drawing.Size(345, 319);
             this.dgv.TabIndex = 4;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
+            this.dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellDoubleClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "KATEGORI";
+            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 109;
+            this.Column1.Width = 139;
             // 
             // txtNama
             // 
             this.txtNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNama.Location = new System.Drawing.Point(25, 294);
-            this.txtNama.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNama.Location = new System.Drawing.Point(28, 368);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(229, 24);
+            this.txtNama.Size = new System.Drawing.Size(257, 28);
             this.txtNama.TabIndex = 7;
+            this.txtNama.TextChanged += new System.EventHandler(this.txtNama_TextChanged);
             // 
             // btnDel
             // 
             this.btnDel.AutoSize = true;
             this.btnDel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.Location = new System.Drawing.Point(304, 291);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDel.Location = new System.Drawing.Point(342, 364);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(23, 28);
+            this.btnDel.Size = new System.Drawing.Size(26, 32);
             this.btnDel.TabIndex = 6;
             this.btnDel.Text = "-";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.AutoSize = true;
             this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(264, 291);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(297, 364);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(27, 28);
+            this.btnAdd.Size = new System.Drawing.Size(31, 32);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // FrmTerms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(356, 330);
+            this.ClientSize = new System.Drawing.Size(400, 412);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnAdd);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmTerms";
             this.Text = "FrmTerms";
+            this.Load += new System.EventHandler(this.FrmTerms_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmTerms_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

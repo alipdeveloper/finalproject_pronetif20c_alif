@@ -82,7 +82,7 @@ namespace KasirVape
 
             if (editState)
             {
-                MySqlCommand cmd = new MySqlCommand("UPDATE tb_barang SET nama=@nama,id_supplier=@id_supplier kategori=@kategori, satuan=@satuan, hargabeli=@hargabeli, hargajual=@hargajual, stok=@stok, laba=@laba WHERE kode_barang=@kode_barang", H.getConnection());
+                MySqlCommand cmd = new MySqlCommand("UPDATE tb_barang SET nama=@nama,id_supplier=@id_supplier, kategori=@kategori, satuan=@satuan, hargabeli=@hargabeli, hargajual=@hargajual, stok=@stok, laba=@laba WHERE kode_barang=@kode_barang", H.getConnection());
                 cmd.Parameters.AddWithValue("kode_barang", txtKode.Text);
                 cmd.Parameters.AddWithValue("nama", txtNama.Text.ToString());
                 cmd.Parameters.AddWithValue("id_supplier", txtsupp.Text.ToString());

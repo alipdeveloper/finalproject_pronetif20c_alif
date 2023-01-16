@@ -29,7 +29,7 @@ namespace KasirVape
 
         }
 
-        private void btnSimpan_Click(object sender, EventArgs e)
+        private void btnSimpan_Click_1(object sender, EventArgs e)
         {
             if (txtid.Text == "" && !editState)
             {
@@ -73,10 +73,11 @@ namespace KasirVape
             this.Close();
         }
 
-        private void btnKeluar_Click(object sender, EventArgs e)
+        private void btnKeluar_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        
     }
 }
