@@ -93,23 +93,14 @@ namespace KasirVape
             string sql = "";
             try
             {
-                string header1 = H.getOption("header1");
-                string header2 = H.getOption("header2");
-                string header3 = H.getOption("header3");
-
                 string periode = "Periode: " + txtAwal.Value.ToString("dd-MMM-yyyy") + " s/d " + txtAkhir.Value.ToString("dd-MMM-yyyy");
-                string stroperator = "Operator: " + txtOperator.Text;
                 string cetak = "Cetak: " + DateTime.Now.ToShortDateString() + " Oleh: " + H.strOperator;
 
                 H.CloseDr();
                 DataSet ds = new DataSet();
 
                 sql = "SELECT '" +
-                    header1 + "' AS header1, '" +
-                    header2 + "' AS header2, '" +
-                    header3 + "' AS header3, '" +
-                    stroperator + "' AS foperator, '" +
-                    periode + "' AS periode, faktur, tanggal, grandtotal, laba, operator, '" +
+                    periode + "' AS periode, faktur, tanggal, grandtotal, '" +
                     cetak + "' AS cetak " +
                     "FROM tb_jual WHERE tanggal>='" + txtAwal.Value.ToString("yyyy-MM-dd") + "' AND tanggal<='" + txtAkhir.Value.ToString("yyyy-MM-dd") + "'";
 
