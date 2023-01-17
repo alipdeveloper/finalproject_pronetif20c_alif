@@ -51,7 +51,7 @@
             this.btnCariKategori = new System.Windows.Forms.Button();
             this.btnCariSatuan = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtsupp = new System.Windows.Forms.TextBox();
+            this.txtsupp = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -321,10 +321,12 @@
             // 
             // txtsupp
             // 
-            this.txtsupp.Location = new System.Drawing.Point(145, 68);
+            this.txtsupp.FormattingEnabled = true;
+            this.txtsupp.Location = new System.Drawing.Point(146, 66);
+            this.txtsupp.Margin = new System.Windows.Forms.Padding(4);
             this.txtsupp.Name = "txtsupp";
-            this.txtsupp.Size = new System.Drawing.Size(161, 22);
-            this.txtsupp.TabIndex = 22;
+            this.txtsupp.Size = new System.Drawing.Size(160, 24);
+            this.txtsupp.TabIndex = 24;
             // 
             // FrmBarangTambah
             // 
@@ -397,6 +399,6 @@
         private System.Windows.Forms.Button btnCariKategori;
         private System.Windows.Forms.Button btnCariSatuan;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtsupp;
+        private System.Windows.Forms.ComboBox txtsupp;
     }
 }

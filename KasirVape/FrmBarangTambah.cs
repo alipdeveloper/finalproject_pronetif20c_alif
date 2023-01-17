@@ -30,6 +30,12 @@ namespace KasirVape
             txtKategori.Items.Clear();
             H.FillCmbTerm(txtKategori);
 
+            dr = H.OpenDr("SELECT * FROM tb_supplier");
+            while (dr.Read())
+            {
+                txtsupp.Items.Add(dr["id_supplier"].ToString());
+            }
+
             //txtsupp.Items.Clear();
             //H.FillCmbSup(txtsupp, "id_supplier");
 
@@ -170,6 +176,11 @@ namespace KasirVape
         }
 
         private void txtKategori_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtsupp_TextChanged(object sender, EventArgs e)
         {
 
         }
